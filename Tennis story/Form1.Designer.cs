@@ -31,13 +31,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TennisPlayerSim));
             this.outputLabel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.option2Button = new System.Windows.Forms.Button();
-            this.option3Button = new System.Windows.Forms.Button();
             this.titleLabel = new System.Windows.Forms.Label();
             this.option1Label = new System.Windows.Forms.Label();
             this.option2Label = new System.Windows.Forms.Label();
             this.option3Label = new System.Windows.Forms.Label();
             this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.option3Button = new System.Windows.Forms.Button();
+            this.option2Button = new System.Windows.Forms.Button();
             this.option1Button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
@@ -64,33 +64,6 @@
             this.label3.Size = new System.Drawing.Size(0, 13);
             this.label3.TabIndex = 2;
             // 
-            // option2Button
-            // 
-            this.option2Button.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.option2Button.BackgroundImage = global::Tennis_story.Properties.Resources.tennisball;
-            this.option2Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.option2Button.ForeColor = System.Drawing.Color.White;
-            this.option2Button.Location = new System.Drawing.Point(442, 343);
-            this.option2Button.Name = "option2Button";
-            this.option2Button.Size = new System.Drawing.Size(50, 50);
-            this.option2Button.TabIndex = 4;
-            this.option2Button.UseVisualStyleBackColor = false;
-            this.option2Button.Click += new System.EventHandler(this.option2Button_Click);
-            // 
-            // option3Button
-            // 
-            this.option3Button.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.option3Button.BackgroundImage = global::Tennis_story.Properties.Resources.tennisball;
-            this.option3Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.option3Button.ForeColor = System.Drawing.Color.White;
-            this.option3Button.Location = new System.Drawing.Point(442, 387);
-            this.option3Button.Name = "option3Button";
-            this.option3Button.Size = new System.Drawing.Size(50, 50);
-            this.option3Button.TabIndex = 5;
-            this.option3Button.UseVisualStyleBackColor = false;
-            this.option3Button.Visible = false;
-            this.option3Button.Click += new System.EventHandler(this.option3Button_Click);
-            // 
             // titleLabel
             // 
             this.titleLabel.BackColor = System.Drawing.Color.LawnGreen;
@@ -107,7 +80,7 @@
             // 
             this.option1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.option1Label.ForeColor = System.Drawing.Color.White;
-            this.option1Label.Location = new System.Drawing.Point(509, 299);
+            this.option1Label.Location = new System.Drawing.Point(509, 277);
             this.option1Label.Name = "option1Label";
             this.option1Label.Size = new System.Drawing.Size(279, 42);
             this.option1Label.TabIndex = 8;
@@ -118,7 +91,7 @@
             // 
             this.option2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.option2Label.ForeColor = System.Drawing.Color.White;
-            this.option2Label.Location = new System.Drawing.Point(509, 344);
+            this.option2Label.Location = new System.Drawing.Point(509, 333);
             this.option2Label.Name = "option2Label";
             this.option2Label.Size = new System.Drawing.Size(279, 42);
             this.option2Label.TabIndex = 9;
@@ -129,7 +102,7 @@
             // 
             this.option3Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.option3Label.ForeColor = System.Drawing.Color.White;
-            this.option3Label.Location = new System.Drawing.Point(509, 395);
+            this.option3Label.Location = new System.Drawing.Point(509, 388);
             this.option3Label.Name = "option3Label";
             this.option3Label.Size = new System.Drawing.Size(279, 42);
             this.option3Label.TabIndex = 10;
@@ -146,13 +119,46 @@
             this.pictureBox.TabIndex = 7;
             this.pictureBox.TabStop = false;
             // 
+            // option3Button
+            // 
+            this.option3Button.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.option3Button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("option3Button.BackgroundImage")));
+            this.option3Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.option3Button.FlatAppearance.BorderSize = 0;
+            this.option3Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.option3Button.ForeColor = System.Drawing.Color.White;
+            this.option3Button.Location = new System.Drawing.Point(442, 387);
+            this.option3Button.Name = "option3Button";
+            this.option3Button.Size = new System.Drawing.Size(50, 50);
+            this.option3Button.TabIndex = 5;
+            this.option3Button.UseVisualStyleBackColor = false;
+            this.option3Button.Visible = false;
+            this.option3Button.Click += new System.EventHandler(this.option3Button_Click);
+            // 
+            // option2Button
+            // 
+            this.option2Button.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.option2Button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("option2Button.BackgroundImage")));
+            this.option2Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.option2Button.FlatAppearance.BorderSize = 0;
+            this.option2Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.option2Button.ForeColor = System.Drawing.Color.White;
+            this.option2Button.Location = new System.Drawing.Point(442, 332);
+            this.option2Button.Name = "option2Button";
+            this.option2Button.Size = new System.Drawing.Size(50, 50);
+            this.option2Button.TabIndex = 4;
+            this.option2Button.UseVisualStyleBackColor = false;
+            this.option2Button.Click += new System.EventHandler(this.option2Button_Click);
+            // 
             // option1Button
             // 
             this.option1Button.BackColor = System.Drawing.Color.Black;
-            this.option1Button.BackgroundImage = global::Tennis_story.Properties.Resources.tennisball;
+            this.option1Button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("option1Button.BackgroundImage")));
             this.option1Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.option1Button.FlatAppearance.BorderSize = 0;
+            this.option1Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.option1Button.ForeColor = System.Drawing.Color.White;
-            this.option1Button.Location = new System.Drawing.Point(442, 295);
+            this.option1Button.Location = new System.Drawing.Point(442, 276);
             this.option1Button.Name = "option1Button";
             this.option1Button.Size = new System.Drawing.Size(50, 50);
             this.option1Button.TabIndex = 3;
