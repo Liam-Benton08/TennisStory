@@ -1753,7 +1753,7 @@ namespace Tennis_story
                 case 81:
                     option3Button.Visible = false;
                     option3Label.Visible = false;
-                    outputLabel.Text = "Oh no you barely missed, you lost the point!";
+                    outputLabel.Text = "Oh no! It was too short! You lost the point"; 
                     pictureBox.Image = Properties.Resources.TournamentLoss;
                    Refresh();
                     Thread.Sleep(1000);
@@ -1764,7 +1764,7 @@ namespace Tennis_story
                 case 82:
                     option3Button.Visible = false;
                     option3Label.Visible = false;
-                    outputLabel.Text = "Oh no! It was too short! You lost the point";
+                    outputLabel.Text = "Oh no you barely missed, you lost the point!";
                     pictureBox.Image = Properties.Resources.TournamentLoss;
                    Refresh();
                     Thread.Sleep(1000);
